@@ -1,0 +1,92 @@
+---
+title: "How hominins became human:"
+subtitle: "Symbolic thought and the origins of us"  
+author: "Marc Kissel"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [xaringan-themer.css, animate.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+solarized_dark(
+  code_font_family = "Fira Code",
+  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css",
+title_slide_background_image = "https://ssdp.org/wp-content/uploads/2018/01/app-state-blog-pic.jpg",
+title_slide_text_color = "#FFFFE0"
+)
+```
+
+
+```{r Setup, include=FALSE}
+#i added animate.css to make animations
+#see https://www.garrickadenbuie.com/blog/2018/12/03/animate-xaringan-slide-transitions/
+
+#packages
+library(tidyverse)
+library(plotly)
+library(leaflet)
+library(knitr)
+library(DT)
+library(xtable)
+library(kableExtra)
+
+```
+
+
+
+---
+class: center, middle, animated, slideInRight
+
+#
+
+---
+
+class: inverse, center, middle, animated, bounceInDown
+
+# Get Started
+
+---
+
+```{r data for interactive DCI, message=FALSE, echo=FALSE}
+DCI <- read_csv("X_Factor_Dataset.csv")
+DCI_interact <-  DCI %>% gather(value = X, key = country, Belgium:Iraq)
+DCI_summary <- DCI_interact %>% group_by(country) %>% summarise(DCI_mean = mean(X, na.rm = TRUE), DCI_sd = sd(X, na.rm = TRUE))
+```
+
+
+
+```{r motion plot DCI with size, message=FALSE, warning=FALSE, echo=FALSE}
+DCI_motion <-ggplot(DCI_interact, aes(x= Year, y = X, group =country, frame = Year, color = country, label=country, size = X)) + geom_point() + geom_label(aes(Year, X, label=country)) 
+                     
+
+```
+
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+
+ggplotly(DCI_motion, height = 600, width = 800)
+
+
+
+
+
+
+
+
+
+#ggplotly(DCI_motion, height = 600, width = 800)
+```
+
+
+

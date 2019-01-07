@@ -1,0 +1,102 @@
+---
+title: "Presentation Ninja"
+subtitle: "\u2694 <br/>with xaringan and xaringanthemer"  
+author: "Yihui Xie"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+solarized_dark(
+  code_font_family = "Fira Code",
+  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css"
+)
+```
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+
+???
+
+Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
+
+---
+
+
+class: center, middle, inverse
+![](images/hominin_skulls.png)
+# How can we examine the processes by which we became human?
+
+## genetics
+## fossils
+## archaeology
+
+--
+
+In general, Paleoanthropology is not *very* integrative 
+
+---
+
+
+
+---
+class: center, middle, inverse
+![](images/hominin_skulls.png)
+# How can we examine the processes by which we became human?
+
+## genetics
+## fossils
+## archaeology
+
+--
+
+In general, Paleoanthropology is not *very* integrative 
+
+
+
+
+----
+class: center, middle, inverse
+
+# Two Questions
+.pull-left[
+# - When & why did we begin to think like humans?
+
+![](https://celebratingjon.files.wordpress.com/2016/01/screen-shot-2016-01-24-at-7-19-59-pm.png)
+]
+.pull-right[
+# - When & why did collective violence evolve?
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Non-Violence_sculpture_in_front_of_UN_headquarters_NY.JPG/1280px-Non-Violence_sculpture_in_front_of_UN_headquarters_NY.JPG)
+]
+
+---
+
+class: center, middle, inverse
+
+## Two Questions
+.pull-left[
+### - When & why did we begin to think like humans?
+
+![](https://celebratingjon.files.wordpress.com/2016/01/screen-shot-2016-01-24-at-7-19-59-pm.png)
+]
+.pull-right[
+### - When & why did collective violence evolve?
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Non-Violence_sculpture_in_front_of_UN_headquarters_NY.JPG/1280px-Non-Violence_sculpture_in_front_of_UN_headquarters_NY.JPG)
+]
+---
+
+
+background-image: (images/Peirce_2.png)

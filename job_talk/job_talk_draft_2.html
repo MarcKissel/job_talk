@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How hominins became human:</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Marc Kissel" />
+    <meta name="date" content="2018-12-25" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding/datatables.js"></script>
+    <link href="libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="animate.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# How hominins became human:
+## Symbolic thought and the origins of us
+### Marc Kissel
+### 2018-12-25
+
+---
+
+
+
+
+
+
+
+
+
+
+
+---
+background-image: url(https://github.com/MarcKissel/job_talk/blob/master/title_temp1.png)
+
+---
+background-size: 100%
+background-image: url(https://media.giphy.com/media/94iS62lx8CRQA/giphy.gif)
+
+---
+background-size: 100%
+background-image: url(https://raw.githubusercontent.com/MarcKissel/job_talk/master/title_page_temp2.jpg)
+
+---
+image-size: 100%
+![](images/title_temp1.png)
+
+---
+class: center, middle, animated, slideInRight
+![](images/hominin_skulls.png)
+
+#Paleoanthropology is not *very* integrative 
+
+
+![](images/two_books.png)
+
+
+---
+
+
+---
+class: center, middle
+
+## What pressures did our early ancestors face and *how* did they respond to them?
+
+## Can these responses inform  on causes/consequences of modern human variation?
+
+![](images/Anton_etal_2014.jpg)
+
+---
+background-image: ![](images/Anton_etal_2014.jpg)
+
+
+---
+
+class: inverse
+
+![](images/400_plus.png)
+---
+class: inverse
+
+![](images/background_data_map.png)
+
+
+
+---
+class: inverse
+
+![](images/map_blombos.png)
+
+
+---
+notes: look at rhe Rladies template for ideas on pics
+also, store images in img folder? might make things easier?
+
+
+see: 
+https://alison.rbind.io/post/r-ladies-slides/
+and 
+https://github.com/rbind/apreshill/blob/master/static/slides/blogdown-workshop-slides.Rmd
+
+other ideas:
+i like the title slide, but maybe the next slide coild have titel as well but as a png file from ppt. MMight look nice
+
+- CHECK IF IT WORKS ON ANOHTER Computer...might need the style shhet..somethig in the insturctiosn talks abut thhis
+
+- think about zoom!
+https://bookdown.org/yihui/rmarkdown/reveal-js-plugins.html
+
+
+- do a datatable as is below with iris for something
+
+
+
+think about background image for a slide::
+
+background-image: url(https://c2.staticflickr.com/6/5729/30943501632_eb0b200eed_b.jpg)
+class: center, top
+# Rock Cairn Hiking
+
+this could also work  for the maps i have. have the background be the map and the transisotns be the artifcats? also could work for the time line? 
+
+
+other things to tink about and trick below are from these notes:
+these notes are super useful too:
+https://dukeslides.johnlittle.info/slides/index.html#37
+
+---
+## Two Column
+
+.pull-left[
+- You can generate a left column 
+
+- by wrapping the left-hand text in `.pull-left[` foo `]`
+
+- TAGS &amp;lt;sup&amp;gt;1&amp;lt;/sup&amp;gt;
+
+- Splunk
+]
+
+.pull-right[
+- You can generate a right column 
+
+- by wrapping the right-hand text in `.pull-right[` foo `]`
+
+- foo
+
+- foo &amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt;
+]
+
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Duke_University_logo.svg/640px-Duke_University_logo.svg.png)
+
+
+---
+# Modifying text
+
+.pull-left[
+
+## Font sizes
+
+This is normal size ( `\(\LaTeX\)`-friendly terms)
+
+.Large[Large]
+
+.large[large]
+
+.small[small]
+
+.footnotesize[footnotesize]
+
+.scriptsize[scriptsize]
+
+.tiny[tiny]
+
+]
+
+.pull-right[
+
+## Text color
+
+.black[black]
+
+.red[red]
+
+.blue[blue]
+
+.green[green], 
+.yellow[yellow], 
+.orange[orange], 
+.purple[purple], 
+.gray[gray or grey]
+
+You can also use `.bold[]` or `.bolder[]` to emphasize text 
+
+This is .bold[bold], this is .bolder[bolder] and this is regular markdown **double-star bold** (visible differences depend on the font)
+
+]
+
+.content-box-green[.scriptsize[.justify-center[
+[Hegge CSS](http://biostatistics.dk/presentations/xaringan/ghoul.html) + [Duke Color Palette](https://styleguide.duke.edu/color-palette/) = hegge-duke.css]
+]]]
+
+---
+
+## Coloured content boxes
+
+Use `.content-box-blue` (or gray/grey, duke-green, green, purple, red, or yellow) to produce a box with coloured background. Size depends on content.
+
+`.content-box-blue[I feel blue]` yields
+
+.content-box-blue[I feel blue]
+
+Wrap in `.full-width` to expand the width
+
+.full-width[.content-box-red[I feel wide and red]]
+
+If you have content in columns then you get
+
+.pull-left[.full-width[.content-box-yellow[**WARNING** Look out for minons or bananas]]]
+.pull-right[.full-width[.content-box-yellow[The box to the left was created using `.pull-left[.full-width[.content-box-yellow[]]]`]]]
+
+
+---
+
+## Coloured content boxes
+
+Use `.content-box-blue` to produce a box with blue background. Size depends on content.  color has the following options:  `.content-box-color` where color is   blue | gray | grey | neutral | duke-green | green | purple | red | yellow
+
+&amp;amp;nbsp;
+
+.content-box-blue[blue]
+.content-box-gray[gray]
+.content-box-grey[grey]
+.content-box-neutral[neutral]
+
+&amp;amp;nbsp;
+
+.content-box-duke-green[duke-green]
+.content-box-green[green]
+.content-box-purple[purple]
+
+&amp;amp;nbsp; 
+
+.content-box-red[red]
+.content-box-yellow[yellow]
+
+
+
+
+
+---
+
+
+<div id="htmlwidget-7143c180dd5acec575b4" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7143c180dd5acec575b4">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+
+
+
+---
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
