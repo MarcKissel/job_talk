@@ -1,0 +1,11 @@
+Population_Category,form,value
+< 100 K,Average_Proportion,8.789958635
+< 100 K,Average_wargroup_size,2486.590909
+100K -1M,Average_Proportion,3.015984811
+100K -1M,Average_wargroup_size,13294.94444
+1M - 100M,Average_Proportion,1.31087107
+1M - 100M,Average_wargroup_size,245321.1768
+100M - 1B,Average_Proportion,0.715758714
+100M - 1B,Average_wargroup_size,1287700.818
+> 1B,Average_Proportion,0.43961505
+> 1B,Average_wargroup_size,5847928.5
